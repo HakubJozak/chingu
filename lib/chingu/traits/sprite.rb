@@ -21,8 +21,7 @@ module Chingu
     #   Rocket.create
     #
     # Options:
-    #  :image - actual sprite to draw
-    #         - see #image= for details as this method is used to set this option
+    #  :image - actual sprite to draw; see #image= for details as this method is used to set this option
     #  
     # Introducing Variables:
     #  :x, :y, :angle, :factor_x, :factor_y, :center_x, :center_y, :zorder, :mode, :visible
@@ -62,10 +61,10 @@ module Chingu
       # of drawing itself on screen.
       #
       # Examples:
-      #   image = 'rocket.png'
-      #   image = Gosu::Image.new($window, 'rocket.png')
+      #   self.image = 'rocket.png'
+      #   self.image = Gosu::Image.new($window, 'rocket.png')
       #     
-      #    image = lambda do
+      #    self.image = lambda do
       #      # TexPlay is library for Gosu image generation
       #      TexPlay.create_image($window,10,10).paint { circle(5,5,5, :color => :red) }
       #    end
